@@ -62,22 +62,22 @@ input{
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: #ab4493; 
-	margin-top: 10px;  
+	margin-top: 5px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
+  margin-bottom: 5px; 
 }
 textarea{
   background-color: #fbfbfb; 
 	width: 405px; 
-	height: 150px; 
+	height: 95px; 
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: #ab4493; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  margin-bottom: 5px; 
+  padding-top: 10px; 
 }
 label{
   display: block; 
@@ -300,7 +300,10 @@ section{
   background-image: linear-gradient(to top, #D9B7E2 0%, #DCD0FB 100%);
 }
 #intereses{
-  background-image: url("https://cdn.dribbble.com/users/699467/screenshots/2920823/attachments/605950/desktop_hd.png")
+  background-image: url("https://cdn.dribbble.com/users/699467/screenshots/2920823/attachments/605950/desktop_hd.png");
+background-repeat: no-repeat;
+background-size: cover;
+  
 }
 #contactame{
   background-image: linear-gradient(to top, #fbc2eb 0%, #B894D7 100%);
