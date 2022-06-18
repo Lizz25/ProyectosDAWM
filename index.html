@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/df620e905f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <script src="script.js"></script>
-  <embed src="audio/audio.mp3" autostarty="true" loop="true" volumen="10" width="0" height="0">
   <header>
     <nav id="nav-1">
       <a class="link-1" href="#intro">Inicio</a>
@@ -20,28 +20,76 @@
     <div class="contenedor-texto">
       <h1>Lizbeth Peña</h1>
       <p>"If you can dream it, you can do it"</p>
-      <p>-Walt Disney</p>
-      <a href="">Section 2 </a>
+      <p id="walt">-Walt Disney</p>
     </div>
-     <img src="imagenes/HTML_Flatline.svg">
+     <img src="imagenes/animation_500_l4hrbyql.gif">
   </section>
+  
   <section id="sobremi">
-    <div class="contenedor-texto">
-      <h2>Section 2</h2>
-      <p>fkjnnkndckdnskcnkdsv</p>
-      <a href="">Section 3 </a>
-    </div>
+    <div class="titulo-seccion"><h1>Sobre Mi</h1></div>
+    <section class="cards">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title"><h2>Datos Personales</h2></div>
+          <div class="datos">
+            <ul class="lista_datos">
+              <li><i class="fa-solid fa-book-open-reader"></i <p>Estudiante de computacion</p></li>
+              <li><i class="fa-solid fa-cake-candles"></i><p>12/Jun/1999</p></li>
+              <li><i class="fa-solid fa-phone"></i><p>+593 985 439801</p></li>
+            </ul>
+            <table class="tabla">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <p>Linkedin</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <p>Github</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title"><h2>Manejo de: </h2></div>
+          <div class="lenguajes">
+            <img src="imagenes/CSS_Outline.svg">
+            <img src="imagenes/Java_Outline.svg">
+            <img src="imagenes/Javascript_Outline.svg">
+            <img src="imagenes/Python_Outline.svg">
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
+  
   <section id="intereses">
-    <div class="contenedor-texto">
-      <h2>Section 3</h2>
-      <p>fkjnnkndckdnskcnkdsv</p>
-      <a href="">Section 4 </a>
+    <div class="titulo-seccion"><h1>Intereses</h1></div>
+    <div class="contenedor-texto-intereses">
+      <div class="intereses2">
+        <img src="imagenes/games.svg">
+        <h1>Desarrollo de videojuegos</h1>
+      </div>
+      <div class="intereses2">
+        <h1>Diseño y animacion</h1>
+        <img src="imagenes/diseno.svg">
+      </div>     
     </div>
   </section>
   <section id="contactame">
-    <div class="formulario">
-      <h1>Contactame</h1>
+    <div class="titulo-seccion"><h1>Contactame</h1></div>
+    <div class="contenedor-texto-contactame">
+      <div class="formulario">
       <form>
         <p>
           <label class="nombre">Nombre<span>*</span></label>
@@ -64,14 +112,16 @@
       </form>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7578159479884!2d-79.8906853648587!3d-2.1417029995903425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d0e393530df%3A0xf334e3e6b3e34868!2sFRIOLANDIA!5e0!3m2!1ses!2sec!4v1654860380998!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </section>
+  
   <footer class="footer">
     <div class="footer-izq">
       <h3>Enlaces</h3>
       <p class="footer-links">
-        <a href="#">Sobre mi</a>
-        <a href="#">Intereses</a>
-        <a href="#">Contactame</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#intereses">Intereses</a>
+        <a href="#contactame">Contactame</a>
       </p>
     </div>
     <div class="footer-centro">
@@ -79,27 +129,19 @@
 				<i class="fa fa-map-marker"></i>
 				<p><span>Sauces 1 </span> Guayaquil, Ecuador</p>
 			</div>
-
-			<div>
-				<i class="fa fa-phone"></i>
-				<p>+593 985439801</p>
-			</div>
-
 			<div>
 				<i class="fa fa-envelope"></i>
 				<p><a href="mailto:lizpevacacela@espol.edu.ec">lizpevacacela@espol.edu.ec</a></p>
 			</div>
     </div>
     <div class="footer-der">
-      <p class="fraseWD">
-				'If you can dream it, you can do it'
-        <span>-Walt Disney</span>
-				</p>
+      <h3>Redes Sociales</h3>
       <div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+        <embed src="audio/audio.mp3" autostarty="true" loop="true" volumen="5" width="0" height="0">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/"><i class="fa fa-github"></i></a>
 
 				</div>
     </div>

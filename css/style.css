@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 html{
   scroll-behavior: smooth;
 }
@@ -7,10 +8,9 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
-  margin: 0px;
 }
 nav {
-  margin-top: 40px;
+  margin-top: 0px;
   padding: 24px;
   text-align: center;
   font-family: Raleway;
@@ -37,20 +37,196 @@ nav {
 }
 .contenedor-texto{
   display: grid;
-  
-  
 }
 .contenedor-texto h1{
   font-family: Dancing Script;
-  font-size: 500%;
+  font-size: 880%;
 }
+.contenedor-texto p{
+  font-family: Dancing Script;
+  font-size: 280%;
+}
+.contenedor-texto p{
+  justify-items: end;
+}
+.contenedor-texto p#walt{
+  display: grid;
+  font-size: 200%;
+  align-items: right;
+  width: 600px;
+}
+.lenguajes img{
+  width: 306px;
+  height: 206px;
+}
+.lenguajes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/*Seccion 2*/
+.cards{
+  display:flex;
+  margin:auto;
+  /*justify-content:center;*/
+  gap:2em;
+  flex-direction:row;
+  padding: 2em;
+  width:auto;
+  justify-content: space-around;
+  height: 450px;
+  } 
+.card{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  padding:1rem;
+  /*background:#A69EE0;*/
+  border-radius: 0.75em;
+  /*border:1px solid #D9B9E4;*/
+  overflow:hidden;
+  box-shadow: 3px 3px 25px 0px rgba(46,61,73,0.5);
+  height: 500px;
+} 
+
+.card__content{
+ display: grid;
+ margin: 1em; 
+ justify-content:center;
+}
+.card__title{
+  font-weight:700;
+  font-family:sans-serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  /*margin-bottom:1em;*/
+}
+.titulo-seccion{
+  margin-bottom:2em;
+  margin-left: 5em;
+}
+.titulo-seccion h1{
+  color: #745BB1;
+  font-family: Raleway , cursive;
+}
+
+.card__text{
+  max-width:50ch;
+  color:#0008;
+  margin-bottom: 1em;
+} 
+.lenguajes i, .tabla i{
+  background-color:  #CB90E2;
+	color: #ffffff;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.lista_datos i{
+  background-color:  #CB90E2;
+	color: #ffffff;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+
+}
+
+/*.lenguajes i, .redes i{
+  display: inline-block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-color:  #CB90E2;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 80px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}*/
+.lista_datos li{
+  list-style-type: none;
+}
+.lista_datos li{
+  display: flex;
+  align-items: center;
+  
+}
+.tabla td{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+/*Seccion Intereses */
+/*#intereses{
+  display: flex;
+  flex-direction: column;
+}*/
+/*#intereses .contenedor-texto{
+  height:650px;
+  display: flex;
+  flex-direction: row;
+}*/
+#intereses{
+  display: block;
+}
+.contenedor-texto-intereses{
+  display: flex;
+  /*grid-template-columns: 1fr 1fr;*/
+  align-items: center;
+  justify-content: space-around;
+  flex-direction:row;
+  
+}
+.contenedor-texto-intereses img{
+  width: 305px;
+  height: 204px;
+}
+.intereses2{
+  text-align: center;
+}
+
+.intereses2 h1{
+  color: #ffffff;
+}
+#contactame{
+  display: flex;
+  flex-direction: column;
+}
+#contactame h1{
+  padding-bottom: 0;
+  margin-bottom:0;
+  text-align: left;
+}
+.contenedor-texto-contactame{
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-direction:row;
+  width: 100%;
+}
+
 .formulario{	
 	width: 460px; 
-  height: auto;
-  margin: 80px auto;
+  /*margin: 60px auto;*/
 	border-radius: 10px;  
 	padding-top: 30px;
-	padding-bottom: 20px;  
+	padding-bottom: 8px;  
   background-color: #fbfbfb; 
   padding-left: 30px; 
 }
@@ -110,12 +286,17 @@ span{
 h1{
 	font-size: 39px;  
 	text-align: letf; 
-	padding-bottom: 20px; 
+	padding-bottom: 30px; 
+	color: #B274CD;
+}
+h2{
+  font-size: 37px;
+  text-align: center; 
+  /*padding-bottom: 5px; */
 	color: #B274CD;
 }
 h3{
 	font-size: 16px; 
-	padding-bottom: 30px;
 	color: #0e0e0e;   
 }
 p{
@@ -162,8 +343,10 @@ Footer
 }
 .footer h3 {
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
+  padding-top: 3erm;
+	font: normal 25px 'Raleway';
+  /*font-family: Raleway;*/
+	margin-top: 20px;
 }
 
 .footer .footer-links{
@@ -183,7 +366,7 @@ Footer
 }
 
 .footer .footer-centro i{
-	background-color:  #33383b;
+	background-color:  #CB90E2;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -227,14 +410,6 @@ Footer
 .footer .footer-der{
 	width: 20%;
 }
-
-.footer .fraseWD{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
 .footer .footer-icons{
 	margin-top: 25px;
 }
@@ -243,7 +418,7 @@ Footer
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #CB90E2;
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -254,16 +429,12 @@ Footer
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+.direccion, .correo{
+  text-align: center;
+}
 
 footer{
   background: #B274CD;
-}
-/*Navegador*/
-ul{
-  display: flex;
-  flex-direction: row;
-  decoration: none;
-  
 }
 /*Secciones*/
 *{
@@ -272,7 +443,7 @@ ul{
   box-sizing: border-box;
 }
 section{
-  height: 650px;
+  height: 450px;
 }
 
 section h2{ 
@@ -283,17 +454,19 @@ section h2{
 section p{
   font-weight: 300;
   margin-bottom: 15px;
-  
 }
 section{
   height:650px;
   display: flex;
   justify-content: space-evenly;
-  padding: 0 40px;
+  padding: 60px 40px;
   align-items: center;
 }
 
 #sobremi{
+  /*display: flex;
+  flex-direction:column;*/
+  display: block;
   background-image: linear-gradient(to top, #8A89D0 0%, #D9B7E2 100%);
 }
 #intro{
@@ -310,4 +483,10 @@ background-size: cover;
 }
 /*Agregar link para iconos*/
 @media only screen and (max-width: 320px) {
+  .contenedor-texto{
+    display: block;
+  }
+  .cards{
+    flex-direction:column;
+  }
 }
